@@ -1,6 +1,6 @@
 #!/bin/bash
 source /opt/ros/noetic/setup.bash
-sleep 2
+sleep 3
 source ~/environment.sh
 if [[ $HAS_SWITCH == has ]]; then
   export ROS_IP=192.168.100.2
