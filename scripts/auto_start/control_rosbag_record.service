@@ -1,6 +1,6 @@
 [Unit]
 Description=rm control rosbag record
-After=rm_start.service
+After=rm_ecat_start.service
 [Service]
 User=dynamicx
 Type=simple
