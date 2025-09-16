@@ -2,6 +2,7 @@
 # Modifier following environment variable when deploy robot.
 # basic
 export ENEMY_COLOR=red
+sleep 1
 ip addr show | grep -q -w '192.168.100.2/24' && export HAS_SWITCH=has || export HAS_SWITCH=no
 export ROBOT_TYPE=standard6
 export IMU_TRIGGER=false
