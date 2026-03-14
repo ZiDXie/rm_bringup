@@ -7,6 +7,6 @@ sudo rm   /etc/udev/rules.d/rm.rules
 echo " "
 echo "Restarting udev"
 echo ""
-sudo service udev reload
-sudo service udev restart
+sudo udevadm control --reload-rules
+sudo udevadm trigger
 echo "Finish"

@@ -1,10 +1,6 @@
-# ls /sys/class/tty/ttyUSB* -l
+# ls /dev/tty*
 # set the udev rule
-
-# use for usb2can
-# ACTION=="add",KERNELS=="3-4.1:1.0",SUBSYSTEMS=="usb",MODE:="0777",SYMLINK+="usbDbus"
-# ACTION=="add",KERNELS=="3-4.2:1.0",SUBSYSTEMS=="usb",MODE:="0777",SYMLINK+="usbReferee"
+#udevadm info -a -n /dev/ttyXXX | grep -E "idVendor|idProduct"
 
 # use for ecat
-ACTION=="add",KERNELS=="3-4.2:1.0",SUBSYSTEMS=="usb",MODE:="0777",SYMLINK+="usbDbus"
-ACTION=="add",KERNELS=="3-4.1:1.0",SUBSYSTEMS=="usb",MODE:="0777",SYMLINK+="usbReferee"
+SUBSYSTEM=="tty", ATTRS{idVendor}=="1a86", ATTRS{idProduct}=="55d2", SYMLINK+="usbReferee", MODE="0666"
