@@ -38,4 +38,3 @@ echo "`crontab -l`"
 echo "######"
 echo -e "Use \e[7mcrontab -e\e[0m to edit or \e[7mcrontab -r\e[0m to remove all"
 echo "######"
-

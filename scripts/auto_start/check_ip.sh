@@ -18,6 +18,3 @@ while true; do
     fi
     sleep 20
 done
-
-
-
