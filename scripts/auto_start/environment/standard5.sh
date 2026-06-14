@@ -6,7 +6,7 @@ ip addr show | grep -q -w '192.168.100.2/24' && export HAS_SWITCH=has || export 
 export ROBOT_TYPE=standard5
 export IMU_TRIGGER=false
 export HW_NAME=rm_ecat_hw
-export LAUNCH=ecat_start
+export LAUNCH=start
 # camera
 export CAMERA_TYPE=hk_camera
 export CAMERA_CLASS=HKCameraNodelet
